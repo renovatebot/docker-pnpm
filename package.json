@@ -1,0 +1,15 @@
+{
+  "name": "docker-pnpm",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dockerised pnpm command line tool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renovatebot/docker-pnpm.git"
+  },
+  "author": "Rhys Arkins <rhys@arkins.net>",
+  "license": "MIT",
+  "dependencies": {
+    "pnpm": "3.6.0"
+  }
+}

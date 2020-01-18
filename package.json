@@ -10,6 +10,6 @@
   "author": "Rhys Arkins <rhys@arkins.net>",
   "license": "MIT",
   "dependencies": {
-    "pnpm": "4.7.2"
+    "pnpm": "4.8.0-0"
   }
 }

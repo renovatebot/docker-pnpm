@@ -1,13 +1,16 @@
-FROM renovate/node@sha256:8150ddc30cefd01767ac0df5271158799af970b3823f1aeddbcfa45f664d60d2
+FROM renovate/node:12@sha256:15f9ea4d553c535d050599f6ca7366dda938c742fe20c8f529fd94b6fa02af86
 
-USER root
+# renovate: datasource=npm depName=pnpm versioning=npm
+ARG PNPM_VERSION=4.13.0
 
-ARG PNPM_VERSION
+LABEL org.opencontainers.image.source="https://github.com/renovatebot/docker-pnpm" \
+      org.opencontainers.image.version="${PNPM_VERSION}"
 
-RUN npm i -g pnpm@$PNPM_VERSION
 
-RUN chmod -R a+rw /usr/local
+#required by installer
+# renovate: datasource=docker depName=renovate/node versioning=docker
+ARG NODE_VERSION=12
 
-RUN chown -R ubuntu:ubuntu /home/ubuntu
+RUN /usr/local/build/pnpm.sh
 
-USER ubuntu
+USER 1000

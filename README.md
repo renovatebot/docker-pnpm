@@ -1,5 +1,5 @@
-![Build status](https://github.com/renovatebot/docker-pnpm/workflows/build/badge.svg)
-![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/renovate/pnpm?sort=date)
+[![Build status](https://github.com/renovatebot/docker-pnpm/workflows/build/badge.svg)](https://github.com/renovatebot/docker-pnpm/actions?query=workflow%3Abuild)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/renovate/pnpm?sort=date)](https://hub.docker.com/r/renovate/pnpm)
 
 # docker-pnpm
 

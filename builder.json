@@ -1,6 +1,4 @@
 {
-  "datasource": "npm",
-  "versioning": "npm",
   "image": "pnpm",
   "startVersion": "3.0.0",
   "cache": "docker-build-cache",

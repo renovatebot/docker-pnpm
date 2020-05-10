@@ -1,4 +1,4 @@
-FROM renovate/buildpack:2-node@sha256:5972cd297dca735bbb52a34c1115834efd2cd2e8da7e03fd1e560dad5b994624
+FROM renovate/buildpack:2-node@sha256:440c5df813ee4a1c19277f2c77b9dd1dd74704a332fdbadc8e7649f063cd34e3
 
 # renovate: datasource=docker depName=node versioning=docker
 ARG NODE_VERSION=12.16.3

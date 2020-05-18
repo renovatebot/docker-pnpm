@@ -13,24 +13,8 @@ env:
   FORCE_COLOR: true
 
 jobs:
-  cleanup:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
-      - name: github-cleanup
-        uses: renovatebot/internal-tools@v0
-        continue-on-error: true
-        with:
-          command: github-cleanup
-          token: ${{ secrets.GH_TOKEN }}
-
   build:
-    needs: [cleanup]
     runs-on: ubuntu-latest
-
-    timeout-minutes: 60
-
     steps:
       - uses: actions/checkout@v2
 
